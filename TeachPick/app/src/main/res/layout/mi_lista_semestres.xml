@@ -2,9 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="50dp"
-    android:layout_marginRight="50dp"
     android:background="@color/white"
+    android:gravity="center_horizontal"
     android:orientation="vertical">
 
     <LinearLayout
@@ -29,7 +28,10 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="1dp">
 
         <TableRow
             android:layout_width="match_parent"
@@ -40,12 +42,14 @@
                 android:id="@+id/txtVwMateria1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 1"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
@@ -54,12 +58,14 @@
                 android:id="@+id/txtVwMateria2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 2"
+                android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
@@ -68,12 +74,14 @@
                 android:id="@+id/txtVwMateria3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 3"
+                android:textAlignment="center"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
         </TableRow>
@@ -87,12 +95,14 @@
                 android:id="@+id/txtVwMateria4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 4"
+                android:textAlignment="center"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
 
@@ -100,12 +110,14 @@
                 android:id="@+id/txtVwMateria5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 5"
+                android:textAlignment="center"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
 
@@ -113,12 +125,14 @@
                 android:id="@+id/txtVwMateria6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 6"
+                android:textAlignment="center"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
         </TableRow>
@@ -132,11 +146,13 @@
                 android:id="@+id/txtVwMateria7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 7"
+                android:textAlignment="center"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
 
@@ -144,11 +160,13 @@
                 android:id="@+id/txtVwMateria8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 8"
+                android:textAlignment="center"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
 
@@ -156,11 +174,13 @@
                 android:id="@+id/txtVwMateria9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
                 android:onClick="onClickMat"
                 android:text="Materia 9"
+                android:textAlignment="center"
                 android:textColor="@color/gris"
                 android:textStyle="italic" />
         </TableRow>
@@ -171,7 +191,8 @@
         android:id="@+id/textView12"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:background="@color/azul"
         android:textSize="1sp" />
 </LinearLayout>

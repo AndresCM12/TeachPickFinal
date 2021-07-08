@@ -25,6 +25,10 @@ public class SemestresActivity extends AppCompatActivity {
     Semestre[] aSemestresSistemas={
             new Semestre("Semestre 1", "Fundamentos de programacion","Calculo diferencial","Matematicas discretas","Fudamentos de investigacion","Taller de etica","Taller de  administracion","","",""),
             new Semestre("Semestre 2", "Quimica general","Programacion orientada a objetos","Calculo integral","Probabilidad y estadistica","Contabilidad financiera","Algebra lineal","","",""),
+            new Semestre("Semestre 3", "Estructura de Datos","Cálculo vectorial","Des. Sustentable","Física General","Investigación de operac","Cultura Emp.","","",""),
+            new Semestre("Semestre 4", "Tópicos Avanz. de progr.","Ecuaciones diferenciales","Métodos numéricos","Pipios. Eléctricos y aplc. Dig.","Simulación","Fund. Bases de Datos","","",""),
+            new Semestre("Semestre 5", "Fundamentos de programacion","Calculo diferencial","Matematicas discretas","Fudamentos de investigacion","Taller de etica","Taller de  administracion","","",""),
+            new Semestre("Semestre 6", "Estructura de Datos","Cálculo vectorial","Des. Sustentable","Física General","Investigación de operac","Cultura Emp.","","",""),
     };
 
     Semestre[] aSemestresIndustrial={

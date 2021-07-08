@@ -24,9 +24,13 @@ public class MateriasActivity extends AppCompatActivity {
     Intent eIntent;
 
     Materia[] aMateriasFundamentosDeProgramacion={
-            new Materia("Fundamentos de programacion", "Edgar Alejandro Tebar Nevarez", 10, 5),
-            new Materia("", "Andres Chavez", 10, 6),
-            new Materia("", "Fernando Vargas", 10, 7)
+            new Materia("Fundamentos de programacion", "Edgar Alejandro Tebar Nevarez", 10, 9),
+            new Materia("", "Andres Chavez", 10, 10),
+            new Materia("", "Héctor Órozco", 5, 7),
+            new Materia("", "Juan Pérez", 8, 4),
+            new Materia("", "César Gonzales", 9, 5),
+            new Materia("", "Nidia Gonzales", 6, 6),
+            new Materia("", "Dora Gomez ", 5, 7),
     };
 
     Materia[] aMateriasCalculoDiferencial={

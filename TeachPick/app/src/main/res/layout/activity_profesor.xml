@@ -13,7 +13,8 @@
         android:id="@+id/txtVwNProfesor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="@font/assistant_extralight"
         android:text="Profesor "
         android:textSize="24sp"
@@ -71,7 +72,7 @@
         android:foregroundGravity="fill_horizontal"
         android:text="Materias que ha impartido:"
         android:textAlignment="textStart"
-        android:textColor="@color/azul"
+        android:textColor="@color/gris"
         android:textSize="18sp"
         android:textStyle="italic"
         tools:layout_editor_absoluteX="175dp"
@@ -96,7 +97,7 @@
         android:id="@+id/textView15"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/assistant_extralight"
         android:text="Comentarios de alumnos"
@@ -104,14 +105,23 @@
         android:textSize="18sp"
         android:textStyle="italic" />
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:textSize="1sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="102dp" />
+
     <ListView
         android:id="@+id/lstVwComentarios"
         style="@style/Widget.AppCompat.Light.ListView.DropDown"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="185dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/img_lst" />
+        android:background="@drawable/background" />
 
     <ImageView
         android:id="@+id/imageView7"
