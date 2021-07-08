@@ -2,8 +2,9 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="44dp"
-    android:layout_marginRight="44dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <LinearLayout
@@ -15,13 +16,15 @@
             android:id="@+id/txtVwSemestre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="13dp"
             android:fontFamily="@font/assistant_extralight"
             android:gravity="center"
             android:text="Semestre Ejemplo"
-            android:textColor="@color/black"
+            android:textColor="@color/gris"
             android:textSize="18sp"
             android:textStyle="italic" />
+
     </LinearLayout>
 
     <TableLayout
@@ -41,9 +44,11 @@
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 1"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 1"
+                android:textAllCaps="false"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtVwMateria2"
@@ -53,9 +58,11 @@
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 2"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 2"
+                android:textAllCaps="false"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtVwMateria3"
@@ -65,9 +72,10 @@
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 3"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 3"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
         </TableRow>
 
         <TableRow
@@ -83,9 +91,10 @@
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 4"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 4"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtVwMateria5"
@@ -95,9 +104,10 @@
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 5"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 5"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtVwMateria6"
@@ -107,9 +117,10 @@
                 android:ems="4"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 6"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 6"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
         </TableRow>
 
         <TableRow
@@ -124,9 +135,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 7"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 7"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtVwMateria8"
@@ -135,9 +147,10 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 8"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 8"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtVwMateria9"
@@ -146,10 +159,19 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/assistant_extralight"
                 android:gravity="center"
-                android:text="Materia 9"
                 android:onClick="onClickMat"
-                android:textColor="@color/black" />
+                android:text="Materia 9"
+                android:textColor="@color/gris"
+                android:textStyle="italic" />
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/azul"
+        android:textSize="1sp" />
 </LinearLayout>

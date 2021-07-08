@@ -6,19 +6,36 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".SemestresActivity">
+    tools:context=".CarrerasActivity">
 
     <TextView
-        android:id="@+id/txtVwTituloSemestres"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/assistant_extralight"
         android:gravity="center"
-        android:text="Semestres"
-        android:textColor="@color/black"
+        android:text="Carreras"
         android:textSize="24sp"
-        android:textStyle="italic" />
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojo"
+        android:textSize="1sp" />
+
+    <ListView
+        android:id="@+id/lstVwCarreras"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    </ListView>
 
     <TextView
         android:id="@+id/textView6"
@@ -27,21 +44,8 @@
         android:background="@color/rojo"
         android:textSize="1sp" />
 
-    <ListView
-        android:id="@+id/lstVwSemestres"
-        style="@style/Widget.AppCompat.Light.ListView.DropDown"
-        android:layout_width="match_parent"
-        android:layout_height="550dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/rojo"
-        android:textSize="1sp" />
-
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageView4"
         android:layout_width="100dp"
         android:layout_height="36dp"
         android:layout_gravity="right"
@@ -54,4 +58,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.959"
         app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
 </LinearLayout>

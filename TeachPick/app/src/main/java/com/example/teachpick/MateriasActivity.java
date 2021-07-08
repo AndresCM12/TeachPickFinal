@@ -6,14 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import spencerstudios.com.bungeelib.Bungee;
+
 public class MateriasActivity extends AppCompatActivity {
 
-    String materia;
+    String materia, carrera;
 
     Intent intentG;
+    Intent aIntent;
+    Intent rIntent;
+    Intent reIntent;
     Intent eIntent;
 
     Materia[] aMateriasFundamentosDeProgramacion={
@@ -36,11 +43,30 @@ public class MateriasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        //esta parte es para hacer pantalla completa, quitar las notis pero la action bar la quitas en themes
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_materias);
-        //eIntent = new Intent(this, Activity.class);
+        rIntent = getIntent();
+        carrera=rIntent.getStringExtra("CARRERA");
+        if(rIntent==null){
+            reIntent = getIntent();
+            carrera = reIntent.getStringExtra("CARRERA");
+        }
+        aIntent = new Intent(this, SemestresActivity.class);
+
+        eIntent = new Intent(this, ProfesorActivity.class);
         intentG = getIntent();
         materia=intentG.getStringExtra("MATERIA");
+
+        if(intentG==null){
+            reIntent = getIntent();
+            materia = reIntent.getStringExtra("MATERIA");
+        }
+
         TextView txtVwTituloM=findViewById(R.id.txtVwTituloMateria);
         txtVwTituloM.setText(materia);
     }
@@ -49,6 +75,7 @@ public class MateriasActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         lstVwMateria=findViewById(R.id.lstVwMaterias);
+
         if(materia.equals("Fundamentos de programacion")) {
             lstVwMateria.setAdapter(new MateriaAdaptador(MateriasActivity.this, R.layout.mi_lista_materias, aMateriasFundamentosDeProgramacion));
         }
@@ -64,10 +91,24 @@ public class MateriasActivity extends AppCompatActivity {
 
     public void onClickProfe(View v){
         TextView profesor=(TextView)v.findViewById(R.id.txtVwProfe);
+        TextView calificacion=(TextView)v.findViewById(R.id.txtVwCalAlu);
         Log.wtf("PROFE:", "" + profesor.getText().toString());
-        //eIntent.putExtra("PROFESOR", profesor.getText().toString());
-        //startActivity(eIntent);
-        //finish();
+        eIntent.putExtra("PROFESOR", profesor.getText().toString());
+        eIntent.putExtra("CALIFICACION",calificacion.getText().toString());
+        eIntent.putExtra("CARRERA",carrera);
+        eIntent.putExtra("MATERIA",materia);
+        startActivity(eIntent);
+        Bungee.slideLeft(this);
+        finish();
+    }
+
+    public void regresar(View v){
+       aIntent.putExtra("CARRERA", carrera);
+        Log.wtf("",""+carrera);
+        startActivity(aIntent);
+
+        Bungee.slideRight(this);
+        finish();
     }
 
 }

@@ -4,19 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".MateriasActivity">
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/txtVwTituloMateria"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/assistant_extralight"
         android:gravity="center"
         android:text="Calculo Diferencial"
@@ -28,12 +24,34 @@
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:background="@android:color/darker_gray"
+        android:background="@color/rojo"
         android:textSize="1sp" />
 
     <ListView
         android:id="@+id/lstVwMaterias"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="550dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/rojo"
+        android:textSize="1sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="100dp"
+        android:layout_height="36dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="15dp"
+        android:onClick="regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.959"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 </LinearLayout>

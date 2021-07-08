@@ -7,12 +7,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class SemestresActivity extends AppCompatActivity {
+import spencerstudios.com.bungeelib.Bungee;
 
+public class SemestresActivity extends AppCompatActivity {
+    Intent reIntent;
     Intent rIntent;
     Intent eIntent;
 
@@ -38,10 +42,20 @@ public class SemestresActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //esta parte es para hacer pantalla completa, quitar las notis pero la action bar la quitas en themes
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_semestres);
         eIntent = new Intent(this, MateriasActivity.class);
         rIntent = getIntent();
+
         carrera=rIntent.getStringExtra("CARRERA");
+
+        if (rIntent ==null){
+            reIntent = getIntent();
+            carrera = reIntent.getStringExtra("CARRERA");
+        }
+
         TextView txtVwSemestre=findViewById(R.id.txtVwTituloSemestres);
         txtVwSemestre.setText(carrera);
     }
@@ -50,6 +64,7 @@ public class SemestresActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         lstVwSemestre=findViewById(R.id.lstVwSemestres);
+
 
         if(carrera.equals("Sistemas Computacionales")) {
             lstVwSemestre.setAdapter(new SemestreAdptador(SemestresActivity.this, R.layout.mi_lista_semestres, aSemestresSistemas));
@@ -70,8 +85,15 @@ public class SemestresActivity extends AppCompatActivity {
             eIntent.putExtra("CARRERA", carrera);
             eIntent.putExtra("MATERIA", ((TextView) v).getText().toString());
             startActivity(eIntent);
+            Bungee.slideLeft(this);
             finish();
         //}
+    }
+    public void regresar(View v){
+        Intent intent = new Intent(this, CarrerasActivity.class);
+        startActivity(intent);
+        Bungee.slideRight(this);
+        finish();
     }
 
 }
