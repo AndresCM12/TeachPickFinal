@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ProfesorActivity">
+
+    <TextView
+        android:id="@+id/txtVwNProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/assistant_extralight"
+        android:text="Profesor: Ejemplo 1"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/rojo"
+        android:textSize="1sp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/img_pp" />
+
+    <TextView
+        android:id="@+id/txtVwNCProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant_extralight"
+        android:text="Nombre completo del profesor"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <TextView
+        android:id="@+id/txtVwCalifiacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/assistant_extralight"
+        android:text="Calificación de alumnos: 7 "
+        android:textColor="@color/gris"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="180dp"
+        tools:layout_editor_absoluteY="388dp" />
+
+    <TextView
+        android:id="@+id/txtVwMateriasImparte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/assistant_extralight"
+        android:foregroundGravity="fill_horizontal"
+        android:text="Materias que ha impartido:"
+        android:textAlignment="textStart"
+        android:textColor="@color/azul"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <TextView
+        android:id="@+id/txtVwMateriasImparte2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/assistant_extralight"
+        android:text="Cálculo Diferencial, Cálculo Integral, Cálculo Vectorial, Álgebra Líneal, Matemáticas Discretas"
+        android:textAlignment="textStart"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="424dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/assistant_extralight"
+        android:text="Comentarios de alumnos"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/lstVwComentarios"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/img_lst" />
+
+</LinearLayout>

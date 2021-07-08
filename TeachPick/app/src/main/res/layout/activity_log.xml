@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <Button
-        android:id="@+id/btnVerCarreras"
+        android:id="@+id/button"
         android:layout_width="185dp"
         android:layout_height="51dp"
         android:background="@drawable/img_btn"
@@ -113,14 +113,13 @@
         android:onClick="txtVwOc"
         android:text="@string/olvidarcontra"
         android:textColor="@color/rojo"
-        android:textSize="15sp"
+        android:textSize="20sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintVertical_bias="0.712" />
 
     <TextView
         android:id="@+id/txtVwCc"
@@ -130,12 +129,13 @@
         android:onClick="txtVwCc"
         android:text="@string/crearcuenta"
         android:textColor="@color/azul"
-        android:textSize="15sp"
+        android:textSize="18sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintVertical_bias="0.752" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

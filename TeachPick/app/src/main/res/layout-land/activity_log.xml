@@ -106,7 +106,7 @@
         app:layout_constraintVertical_bias="0.813" />
 
     <Button
-        android:id="@+id/btnVerCarreras"
+        android:id="@+id/button"
         android:layout_width="185dp"
         android:layout_height="51dp"
         android:background="@drawable/img_btn"

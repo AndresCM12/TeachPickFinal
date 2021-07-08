@@ -9,8 +9,7 @@
         android:roundIcon="@drawable/img_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeachPick">
-        <activity android:name=".SemestresActivity"></activity>
-        <activity android:name=".MateriasActivity" />
+        <activity android:name=".ProfesorActivity"></activity>
         <activity android:name=".CarrerasActivity" />
         <activity android:name=".RecuperarCuentaActivity" />
         <activity android:name=".CrearCuentaActivity" />

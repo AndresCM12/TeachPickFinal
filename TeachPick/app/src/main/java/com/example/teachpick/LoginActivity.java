@@ -20,8 +20,6 @@ import spencerstudios.com.bungeelib.Bungee;
 public class LoginActivity extends AppCompatActivity {
     TextView txtVwUser, txtVwPass;
 
-    Intent intentP;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,16 +33,14 @@ public class LoginActivity extends AppCompatActivity {
         txtVwUser =  findViewById(R.id.txtVwUsername);
         txtVwPass = findViewById(R.id.txtVwPass);
 
-        intentP = new Intent(this, CarrerasActivity.class);
-
     }
 
     public void btnIniciarSesion(View v){
 
         Log.wtf("Btn","funciona");
-        startActivity(intentP);
-        finish();
-        //alertaLogin();
+        Intent intent = new Intent(this, ProfesorActivity.class);
+        startActivity(intent);
+        Bungee.slideLeft(this);
     }
 
     public void txtVwOc(View v){
@@ -83,7 +79,5 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
         dlgMiCuadroDialogo.show();
-        startActivity(intentP);
-        finish();
     }
 }

@@ -2,22 +2,13 @@ package com.example.teachpick;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import spencerstudios.com.bungeelib.Bungee;
 
 public class CarrerasActivity extends AppCompatActivity {
-
-    Intent intent;
 
     Carrera[] aCarreras={
             new Carrera("Sistemas Computacionales", 48, 5.0),
@@ -34,10 +25,13 @@ public class CarrerasActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //esta parte es para hacer pantalla completa, quitar las notis pero la action bar la quitas en themes
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_carreras);
-        intent = new Intent(this, SemestresActivity.class);
+
     }
 
     @Override
@@ -46,21 +40,10 @@ public class CarrerasActivity extends AppCompatActivity {
         lstVwCarrera=findViewById(R.id.lstVwCarreras);
 
         lstVwCarrera.setAdapter(new CarreraAdaptador(this, R.layout.mi_lista_carreras, aCarreras));
+    }
 
-        lstVwCarrera.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Log.wtf("", "" + position);
+    public void onVer(View v){
 
-                    TextView carrera=(TextView)view.findViewById(R.id.txtVwCarrera);
-
-                    intent.putExtra("CARRERA", carrera.getText().toString());
-                    startActivity(intent);
-                    Bungee.slideLeft(CarrerasActivity.this);
-                    finish();
-
-            }
-        });
     }
 
 }
