@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TeachPick</string>
+    <string name="title">Teach Pick</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="alerta_login">Asegurate de que los valores que estás introduciendo sean un usuario y contraseña válidos.  </string>
+    <string name="alerta_recuperar">Asegurate de que el correo pertenezca a tu cuenta, para así establecer una nueva contraseña</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="btn_lgn">Iniciar sesión</string>
+    <string name="iniciar_sesion">Iniciar Sesión</string>
+    <string name="user">Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="olvidarcontra">¿Olvidaste tu contraseña? </string>
+    <string name="crearcuenta">Crear cuenta</string>
+    <string name="correo">Correo</string>
+    <string name="recuperarCuenta">Recuperar Cuenta</string>
+    <string name="nuevapass">Nueva Contraseña</string>
+    <string name="pasosiniciar">Para iniciar sesión tienes que dirigirte a la pantalla prinicpal, una vez estés ahí, tienes que autentificarte con tus credenciales que acabas de crear</string>
+</resources>

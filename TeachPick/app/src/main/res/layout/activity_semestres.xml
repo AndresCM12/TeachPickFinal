@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SemestresActivity">
+
+    <TextView
+        android:id="@+id/txtVwTituloSemestres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/assistant_extralight"
+        android:gravity="center"
+        android:text="Semestres"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/darker_gray"
+        android:textSize="1sp" />
+
+    <ListView
+        android:id="@+id/lstVwSemestres"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
